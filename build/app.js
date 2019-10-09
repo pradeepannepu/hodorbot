@@ -7421,7 +7421,8 @@
                             whoisgod: this.showGod,
                             whoami: this.showWho,
                             pray: this.showPray,
-                            man: this.showHelp
+                            man: this.showHelp,
+                            chikoti: this.chikoti
 
                         }
                     })
@@ -7474,6 +7475,10 @@
                     this.addHistory("cat - print contents of a file"),
                     this.addHistory("clear - clear screen"),
                     this.addHistory("github - View Code")
+                },
+                chikoti: function() {
+                    this.registerCommands(),this.addHistory("I'm Chikoti."),
+                    this.addHistory("Type `help` to see what are all the commands are available")
                 },
                 showHell: function() {
                     this.registerCommands(),this.addHistory("Yes! What the hell")
